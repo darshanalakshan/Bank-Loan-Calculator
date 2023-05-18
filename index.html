@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Futuristic Loan Calculator</h1>
+    <div class="form">
+      <label for="loan-amount">Loan Amount:</label>
+      <input type="text" id="loan-amount" placeholder="Loan amount" />
+      
+      <label for="interest-rate">Annual Interest Rate:</label>
+      <input type="text" id="interest-rate" placeholder="Annual interest rate" />
+      
+      <label for="loan-term">Loan Term (in years):</label>
+      <input type="text" id="loan-term" placeholder="Loan term" />
+      
+      <button onclick="calculateLoan()">Calculate</button>
+      
+      <div id="result">
+        <label for="monthly-payment">Monthly Payment:</label>
+        <span id="monthly-payment"></span>
+        
+        <label for="total-interest">Total Interest:</label>
+        <span id="total-interest"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
